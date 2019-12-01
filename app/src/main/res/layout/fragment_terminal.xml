@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/modesA"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:baselineAligned="false">
+
+
+            <RadioButton
+                android:id="@+id/radioMode0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/str_off" />
+
+            <RadioButton
+                android:id="@+id/radioMode2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_white" />
+
+            <RadioButton
+                android:id="@+id/radioMode1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_fixed" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/modesB"
+            android:layout_width="94dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:baselineAligned="false">
+
+            <RadioButton
+                android:id="@+id/radioMode4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_fade"/>
+
+
+            <RadioButton
+                android:id="@+id/radioMode5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_cycle" />
+
+            <RadioButton
+                android:id="@+id/radioMode3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_circle" />
+
+        </RadioGroup>
+
+        <SeekBar
+            android:id="@+id/brightnessSeekBar"
+            android:layout_width="178dp"
+            android:layout_height="30dp"
+            android:layout_weight="0"
+            android:max="254"
+            android:orientation="vertical"
+            />
+    </LinearLayout>
+
+    <com.larswerkman.holocolorpicker.ColorPicker
+        android:id="@+id/picker"
+        android:layout_width="249dp"
+        android:layout_height="224dp"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/receive_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:freezesText="true"
+        android:gravity="bottom"
+        android:scrollbars="vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="?android:attr/listDivider"
+        android:layout_height="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/send_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="text|textNoSuggestions"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_send_white_24dp" />
+    </LinearLayout>
+
+</LinearLayout>
+

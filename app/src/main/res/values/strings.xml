@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BT LED Controller</string>
+    <string name="devices">Bluetooth Devices</string>
+    <string name="bt_settings">Bluetooth settings</string>
+    <string name="clear">Clear</string>
+    <string name="always">always</string>
+    <string name="newline_mode">Newline Mode</string>
+
+    <string name="str_off">Off</string>
+    <string name="str_white">White</string>
+    <string name="str_fixed">Fixed</string>
+    <string name="str_fade">Fade</string>
+    <string name="str_cycle">Cycle</string>
+    <string name="str_circle">Circle</string>
+
+</resources>
